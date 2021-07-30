@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    td{
+        font-size:12px !important;
+    }
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 0.5rem !important;
+    }
+</style>
+<br />
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-3">
+            <div class="card-body">
+                <input type="button" value="Nuevo Empleado" class="btn btn-sm btn-primary" id="btnOpciones" onclick="CambiarDOM(null)" />
+            </div>
+        </div>
+    </div>
+    <div class="col-12" id="tabla">
+        <div class="card">
+            <div class="row">
+                <div class="offset-4 col-4 mt-3">
+                    <div class="text-center"><h4>LISTA EMPLEADOS</h4></div>
+                    <input type="text" class="form-control" onkeyup="ListarEmpleados()" id="txtFiltro" autocomplete="off" placeholder="Buscar por nombre" />
+                </div>
+                <div class="col-12">
+                    <div class="card-body" id="tablaContenido">
+                        <span>Cargando datos...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" id="formulario" style="display:none">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-center"><h4>FORMULARIO REGISTRO</h4></div>
+                <form id="frmRegistro" class="row">
+                    <input type="hidden" id="EmpleadoId" name="EmpleadoId" class="data" />
+                    <div class="form-group col-6">
+                        <label>NOMBRES</label>
+                        <input type="text" name="Nombre" id="Nombre" class="form-control data r" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>APELLIDOS</label>
+                        <input type="text" name="Apellido" id="Apellido" class="form-control data r" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>EDAD</label>
+                        <input type="number" name="Edad" id="Edad" class="form-control data r" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>FECHA NACIMIENTO</label>
+                        <input type="date" name="FechaNacimiento" id="FechaNacimiento" class="form-control data r" />
+                    </div>
+                    <div class="form-group col-6">
+                        <label>CARGO</label>
+                        <select name="CargoId" id="CargoId" class="form-control data r">
+                        </select>
+                    </div>
+                    <div class="form-group col-6">
+                        <label>ESTADO</label>
+                        <input type="text" name="Estado" id="Estado" value="ACT" readonly class="form-control" />
+                    </div>
+                    <div class="col-12 text-center">
+                        <input type="submit" value="Guardar" class="btn btn-sm btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/jquery/jquery.min.js"></script>
+<script src="~/Content/datatable/js/5.2 datatables.min.js.js"></script>
+<script src="~/Content/Ajax/AjaxGenerico.js"></script>
+<script src="~/Content/Ajax/EmpleadoAJAX.js"></script>

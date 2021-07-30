@@ -1,0 +1,6 @@
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\bin\Release\Modelo.dll
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\bin\Release\Modelo.pdb
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\obj\Release\Modelo.csproj.AssemblyReference.cache
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\obj\Release\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\obj\Release\Modelo.dll
+C:\Users\Bryan J. Campos\Desktop\Practica\Modelo\obj\Release\Modelo.pdb
